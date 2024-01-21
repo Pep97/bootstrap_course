@@ -1,0 +1,9 @@
+add bootstrap to your project -> use CDN or npm install bootstrap
+
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+
+when you use boostrap, it will reboot your browser default funcionalities and apply new one
+check this page to see its default version.
+
+https://getbootstrap.com/docs/5.3/content/reboot/
