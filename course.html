@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/index.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+  
+  <h2>SET-UP BOOTSTRAP TO MODIFY IT</h2>
 
-  <h2>SET UP</h2>
+  <br>run -> npm init
+    <br>run -> npm install bootstrap
+
+    <br><br>you have to change the SASS files before they are complied into CSS files
+
+    <br>1- create a folder called scss
+    <br>2- create a file called main.scss
+    <br>3- import this file 
+
+    <br><br>import bootstrap -> IMPORTANT: write above this line so that every file into bootstrap will be updated correctly
+    <br>@import '../node_modules/bootstrap/scss/bootstrap';
+
+    <br><br>4- install the extension Live Sass Compiler -> this will watch a SASS file for changes and
+    automatically compile it into a CSS file whenever a change is saved.
+
+    <br>5- go to setting, search "live sass format", then look on "Live Sass Compile -> Settings: Formats" and click "edit in settings.json"
+    change the existing code with this:
+    <br>{
+    <br>    "format": "compressed",
+    <br>    "extensionName": ".min.css",
+    <br>    "savePath": "/css"
+    <br>}
+    <br> click "watch sass" -> side of "live server" -> this will do an initial compile and output 
+    a CSS file into the CSS folder, and every change will be updated automatically
+
+    <br><br>
+
+
+  <h2>SET UP ONLY BOOTSTRAP</h2>
 
   <br><br> add bootstrap to your project -> use CDN or npm install bootstrap
 
